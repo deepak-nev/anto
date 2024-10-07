@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz-category">
+            <h1>Select a Quiz Category</h1>
+            <button class="category-btn" onclick="startQuiz('antonyms')">Antonyms</button>
+            <button class="category-btn" onclick="startQuiz('synonyms')">Synonyms</button>
+            <button class="category-btn" onclick="exitQuiz()">Exit</button>
+        </div>
+
+        <div id="quiz" class="hidden">
+            <div id="scoreboard">Score: <span id="score">0</span></div>
+            <h2 id="quiz-title"></h2>
+            <p id="question-text"></p>
+            <div id="answers"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
